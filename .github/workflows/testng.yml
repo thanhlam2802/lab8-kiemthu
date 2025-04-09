@@ -25,5 +25,3 @@ jobs:
 
       - name: Build and test with Maven
         run: mvn clean test
-        working-directory: ./Lab8_kiemthu
-
