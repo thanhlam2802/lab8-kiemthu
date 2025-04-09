@@ -1,10 +1,11 @@
-name: Java CI with Maven and TestNG on:
-  push:
-    branches: [ main, test ]
-  pull_request:
-    branches: [ main ] jobs:
-  build:
-    runs-on: ubuntu-latest steps:
+name: Java CI with Maven and TestNGname: Java CI with Maven and TestNG on:
+  push: on:  branches: [ main, test ] push:  pull_request:
+    branches: [ main, test ] branches: [ main ] jobs:
+  pull_request:  build:
+    branches: [ main ] runs-on: ubuntu-latest steps:
+      - uses: actions/checkout@v3 - name: Set up JDK jobs:  uses: actions/setup-java@v3 with:
+  build:  java-version: '17' distribution: 'temurin'
+    runs-on: ubuntu-latest - name: Build with Maven steps:  run: mvn -B clean test
       - uses: actions/checkout@v3 - name: Set up JDK
         uses: actions/setup-java@v3 with:
           java-version: '17' distribution: 'temurin'
