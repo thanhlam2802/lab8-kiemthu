@@ -1,27 +1,25 @@
-name: Java CI with Maven and TestNG
+name: Java Test
 
 on:
   push:
-    branches:
-      - main
-      - test
+    branches: [master]
   pull_request:
-    branches:
-      - main
+    branches: [master]
 
 jobs:
-  build:
-    runs-on: ubuntu-latest
+  windows-jobs:
+    name: Run Tests on Windows
+    runs-on: windows-latest
 
     steps:
       - name: Checkout code
         uses: actions/checkout@v3
 
-      - name: Set up JDK 21
+      - name: Set up JDK
         uses: actions/setup-java@v3
         with:
-          java-version: '21'
+          java-version: '17'
           distribution: 'temurin'
 
-      - name: Build and test with Maven
-        run: mvn clean test
+      - name: Run Tests on Windows
+        run: mvn clean verify
