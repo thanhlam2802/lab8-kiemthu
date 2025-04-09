@@ -1,19 +1,54 @@
 name: Java CI with Maven and TestNGname: Java CI with Maven and 
-TestNGname: Java CI with Maven and TestNG on:
+TestNGname: Java CI with Maven and TestNGname: Java CI with Maven and 
+TestNG on:
   push: on:  branches: [ main, test ] push:  pull_request: on:  branches: 
-[ main, test ] branches: [ main ] jobs:
-  push:  pull_request:  build:
-    branches:  branches: [ main ] runs-on: ubuntu-latest steps:
-      - main - uses: actions/checkout@v3 - name: Set up JDK jobs:  uses: 
-actions/setup-java@v3 with:
-      - test build:  java-version: '17' distribution: 'temurin'
-  pull_request:  runs-on: ubuntu-latest - name: Build with Maven steps:  
-run: mvn -B clean test
-    branches:  - uses: actions/checkout@v3 - name: Set up JDK
-      - main uses: actions/setup-java@v3 with:
+[ main, test ] branches: [ main ] jobs: on:  push:  pull_request:  build:
+  push:  branches:  branches: [ main ] runs-on: ubuntu-latest steps:
+    branches:  - main - uses: actions/checkout@v3 - name: Set up JDK jobs:  
+uses: actions/setup-java@v3 with:
+      - main - test build:  java-version: '17' distribution: 'temurin' - 
+      test pull_request:  runs-on: ubuntu-latest - name: Build with Maven 
+      steps:
+  pull_request:run: mvn -B clean test
+    branches:  branches:  - uses: actions/checkout@v3 - name: Set up JDK
+      - main - main uses: actions/setup-java@v3 with:
           java-version: '17' distribution: 'temurin' jobs:  - name: Build 
-with Maven
-  build:  run: mvn -B clean test
+with Maven jobs:  build:  run: mvn -B clean test
+  build:  runs-on: ubuntu-latest steps:
+    runs-on: ubuntu-latest - name: Checkout code
+        uses: actions/checkout@v3
+    steps:  - name: Set up JDK 21
+      - name: Checkout code uses: actions/setup-java@v3 with:
+        uses: actions/checkout@v3 java-version: '21' distribution: 
+'temurin'
+      - name: Build and test with Maven - name: Set up JDK 21 run: mvn 
+      clean test
+        uses: actions/setup-java@v3 with:
+          java-version: '21' distribution: 'temurin'
+      - name: Build and test with Maven
+        run: mvn clean test name: Java CI with Maven and TestNG on:
+  push:
+    branches:
+      - main - test
+  pull_request:
+    branches:
+      - main jobs:
+  build:
+    runs-on: ubuntu-latest steps:
+      - name: Checkout code
+        uses: actions/checkout@v3
+      - name: Set up JDK 21
+        uses: actions/setup-java@v3 with:
+          java-version: '21' distribution: 'temurin'
+      - name: Build and test with Maven
+        run: mvn clean test name: Java CI with Maven and TestNG on:
+  push:
+    branches:
+      - main - test
+  pull_request:
+    branches:
+      - main jobs:
+  build:
     runs-on: ubuntu-latest steps:
       - name: Checkout code
         uses: actions/checkout@v3
