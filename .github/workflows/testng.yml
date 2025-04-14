@@ -25,7 +25,6 @@ jobs:
 
       - name: Build and test with Maven
         run: mvn -X clean test
-        
       - name: Run tests with TestNG
         run: mvn clean test -DsuiteXmlFile=testng.xml
         - name: Show Maven build output
