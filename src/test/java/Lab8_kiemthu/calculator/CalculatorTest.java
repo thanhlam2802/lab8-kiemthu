@@ -12,6 +12,10 @@ public class CalculatorTest {
     public void testAdd() {
         Assert.assertEquals(calc.add(2, 3), 2);
     }
+    @Test
+    public void testAdd2() {
+        Assert.assertEquals(calc.add(2, 3), 2);
+    }
 
     @Test
     public void testSubtract() {
