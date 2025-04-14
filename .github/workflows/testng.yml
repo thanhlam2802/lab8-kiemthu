@@ -24,7 +24,7 @@ jobs:
           java-version: '21'
           distribution: 'temurin'
 
-      - name: Build and test with Maven
-        run: mvn test
-      
+      - name: Build and test with Maven using TestNG suite
+        run: mvn test -Dsurefire.suiteXmlFiles=testng.xml
+
 

@@ -6,6 +6,7 @@
       <class name="Lab8_kiemthu.calculator.CalculatorTest">
         <methods>
           <include name="testAdd"/>
+          <include name="testAdd2"/>
         </methods>
       </class> <!-- Lab8_kiemthu.calculator.CalculatorTest -->
     </classes>

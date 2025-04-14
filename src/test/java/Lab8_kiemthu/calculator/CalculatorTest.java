@@ -20,5 +20,6 @@ public class CalculatorTest {
     @Test
     public void testSubtract() {
         Assert.assertEquals(calc.subtract(5, 2), 3);
+        System.out.print("test thanh con");
     }
 }
