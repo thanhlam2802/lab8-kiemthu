@@ -2,12 +2,12 @@
 <testng-results ignored="0" total="2" passed="1" failed="1" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-04-14T14:11:53 ICT" name="Default suite" finished-at="2025-04-14T14:11:53 ICT" duration-ms="38">
+  <suite started-at="2025-04-14T14:27:18 ICT" name="Default suite" finished-at="2025-04-14T14:27:18 ICT" duration-ms="30">
     <groups>
     </groups>
-    <test started-at="2025-04-14T14:11:53 ICT" name="Default test" finished-at="2025-04-14T14:11:53 ICT" duration-ms="38">
+    <test started-at="2025-04-14T14:27:18 ICT" name="Default test" finished-at="2025-04-14T14:27:18 ICT" duration-ms="30">
       <class name="Lab8_kiemthu.calculator.CalculatorTest">
-        <test-method signature="testAdd()[pri:0, instance:Lab8_kiemthu.calculator.CalculatorTest@5340477f]" started-at="2025-04-14T14:11:53 ICT" name="testAdd" finished-at="2025-04-14T14:11:53 ICT" duration-ms="11" status="FAIL">
+        <test-method signature="testAdd()[pri:0, instance:Lab8_kiemthu.calculator.CalculatorTest@5340477f]" started-at="2025-04-14T14:27:18 ICT" name="testAdd" finished-at="2025-04-14T14:27:18 ICT" duration-ms="8" status="FAIL">
           <exception class="java.lang.AssertionError">
             <message>
               <![CDATA[expected [4] but found [5]]]>
@@ -54,7 +54,7 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testAdd -->
-        <test-method signature="testSubtract()[pri:0, instance:Lab8_kiemthu.calculator.CalculatorTest@5340477f]" started-at="2025-04-14T14:11:53 ICT" name="testSubtract" finished-at="2025-04-14T14:11:53 ICT" duration-ms="1" status="PASS">
+        <test-method signature="testSubtract()[pri:0, instance:Lab8_kiemthu.calculator.CalculatorTest@5340477f]" started-at="2025-04-14T14:27:18 ICT" name="testSubtract" finished-at="2025-04-14T14:27:18 ICT" duration-ms="0" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testSubtract -->

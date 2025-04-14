@@ -1,0 +1,7 @@
+<suite name="Test Suite">
+    <test name="Calculator Test">
+        <classes>
+            <class name="Lab8_kiemthu.calculator.CalculatorTest"/>
+        </classes>
+    </test>
+</suite>
