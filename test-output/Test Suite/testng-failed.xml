@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Test Suite]">
+  <test thread-count="5" name="Calculator Test(failed)">
+    <classes>
+      <class name="Lab8_kiemthu.calculator.CalculatorTest">
+        <methods>
+          <include name="testAdd"/>
+          <include name="testAdd2"/>
+        </methods>
+      </class> <!-- Lab8_kiemthu.calculator.CalculatorTest -->
+    </classes>
+  </test> <!-- Calculator Test(failed) -->
+</suite> <!-- Failed suite [Test Suite] -->

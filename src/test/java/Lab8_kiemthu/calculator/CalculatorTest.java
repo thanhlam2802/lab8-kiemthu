@@ -1,25 +1,29 @@
 package Lab8_kiemthu.calculator;
 
-
-
-import org.testng.Assert;
-import org.testng.annotations.Test;
+import org.junit.jupiter.api.Assertions;
+import org.junit.jupiter.api.Test;
 
 public class CalculatorTest {
     Calculator calc = new Calculator();
 
+   
     @Test
     public void testAdd() {
-        Assert.assertEquals(calc.add(2, 3), 2);
-    }
-    @Test
-    public void testAdd2() {
-        Assert.assertEquals(calc.add(2, 3), 2);
+       
+        Assertions.assertEquals(5, calc.add(2, 3));
     }
 
+   
+    @Test
+    public void testAdd2() {
+       
+        Assertions.assertEquals(5, calc.add(2, 3));
+    }
+
+    
     @Test
     public void testSubtract() {
-        Assert.assertEquals(calc.subtract(5, 2), 3);
-        System.out.print("test thanh con");
+       
+        Assertions.assertEquals(3, calc.subtract(5, 2));
     }
 }
