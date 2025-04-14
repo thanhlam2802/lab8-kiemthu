@@ -24,4 +24,13 @@ jobs:
           distribution: 'temurin'
 
       - name: Build and test with Maven
-        run: mvn clean test
+        run: mvn -X clean test
+        
+      - name: Run tests with TestNG
+        run: mvn clean test -DsuiteXmlFile=testng.xml
+        - name: Show Maven build output
+        run: |
+        mvn clean install
+        cat target/test-classes/org/testng/testng-results.xml
+
+
